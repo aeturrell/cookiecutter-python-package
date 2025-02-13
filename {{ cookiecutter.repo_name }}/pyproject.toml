@@ -1,5 +1,5 @@
 [project]
-name = "{{cookicutter.repo_name}}"
+name = "{{cookiecutter.repo_name}}"
 version = "0.0.1"
 description = "{{cookiecutter.project_description}}"
 authors = [{name="{{cookiecutter.author_name}}", email="{{cookiecutter.email}}"}]
