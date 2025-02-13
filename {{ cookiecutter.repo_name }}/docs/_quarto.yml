@@ -9,12 +9,9 @@ website:
     left:
       - href: index.ipynb
         text: Home
-      - href: features.ipynb
-        text: Features
       - text: "Reference"
         file: reference/index.qmd
       - contributing.qmd
-      - code_of_conduct.qmd
 
 format:
   html:

@@ -1,4 +1,4 @@
- Contributing
+# Contributing
 
 Thank you for your interest in improving this project. This project is
 open-source under the [MIT license](https://opensource.org/licenses/MIT)
@@ -124,8 +124,6 @@ your approach.
 - Commit the change with a new version label as the commit message (checking the tests pass)
 
 - Head to GitHub and merge into main (again, if the CI works)
-
-- Draft a new release based on that most recent merge commit, using the new version as the tag
 
 - Confirm the release draft on GitHub
 
