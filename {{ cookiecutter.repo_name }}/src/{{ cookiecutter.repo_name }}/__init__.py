@@ -7,7 +7,7 @@
 from importlib.metadata import PackageNotFoundError, version
 
 try:
-    __version__ = version("{{ccookiecutter.project_name}}")
+    __version__ = version("{{cookiecutter.project_name}}")
 except PackageNotFoundError:
     __version__ = "unknown"
 
