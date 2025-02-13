@@ -1,6 +1,6 @@
 """
 {{cookiecutter.project_name}}
-{{cookiecutter.len_project_name}}
+------------------------------------
 {{cookiecutter.project_description}}
 """
 
