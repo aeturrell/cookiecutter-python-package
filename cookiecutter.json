@@ -1,0 +1,12 @@
+{
+    "project_name": "Cookiecutter Python Package",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "len_project_name": "{{ '-'*len(cookiecutter.project_name) }}",
+    "github_handle": "myghhandle",
+    "project_description": "An example project.",
+    "author_name": "Anonymous",
+    "python_version_number": "3.10.0",
+    "description": "Python package",
+    "year": "2025"
+}
