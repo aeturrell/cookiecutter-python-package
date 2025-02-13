@@ -1,3 +1,4 @@
+{% raw %}
 name: Release
 
 permissions:
@@ -102,3 +103,4 @@ jobs:
       - name: Publish
         if: steps.check-version.outputs.tag
         run: cd docs;uv run quarto publish gh-pages --no-render --no-browser
+{% endraw %}
