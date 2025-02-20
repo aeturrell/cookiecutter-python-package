@@ -6,11 +6,25 @@ A modern Python package cookiecutter.
 
 - Nox for isolated testing
 - Modern Python dependency management with uv
-- Pre-configured testing with pytest
-- Automatic documentation with Quarto
-- Code formatting with ruff
+- pytest for testing
+- Documentation website with Quarto + GitHub pages
+- Automatic code documentation with Quartodoc
+- Code formatting with ruff (including formatting and import sorting)
 - Git pre-commit hooks for code quality
+  - Ruff lint/format/sort imports
+  - check for added large files
+  - check TOML
+  - check YAML
+  - end of file fixer
+  - trailing whitespace trimmer
+  - nbstripout
+  - pydoclint
 - Continuous Integration with GitHub Actions
+  - tests with pytest + nox (cross-platform)
+  - code coverage
+  - release labeler
+  - PyPI publishing
+  - Docs build and deploy
 
 ## Prerequisites
 

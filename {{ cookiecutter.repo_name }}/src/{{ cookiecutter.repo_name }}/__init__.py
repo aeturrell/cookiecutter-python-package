@@ -10,4 +10,3 @@ try:
     __version__ = version("{{cookiecutter.project_name}}")
 except PackageNotFoundError:
     __version__ = "unknown"
-
