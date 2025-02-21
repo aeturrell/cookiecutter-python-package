@@ -79,6 +79,6 @@ for i in range(num_chips):
 
 ax.set_title("cookiecutter\n        python package", fontproperties=prop, size=25, loc="left", color="#ff7161")
 plt.tight_layout()
-plt.savefig("cookiecutter_logo.svg")
+plt.savefig("cookiecutter_logo.svg", transparent=True)
 # Show the drawing
 plt.show()
