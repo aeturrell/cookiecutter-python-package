@@ -33,10 +33,10 @@ quartodoc:
   sidebar: _sidebar.yml
 
   sections:
-    - title: "Function reference"
+    - title: "Reference"
       desc: "What {{cookiecutter.repo_name}}'s functions do"
       contents:
         # the functions being documented in the package.
         # you can refer to anything: class methods, modules, etc..
-        - function
-        - class
+        - foo
+        - class_foo

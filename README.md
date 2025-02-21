@@ -2,29 +2,32 @@
 
 A modern Python package cookiecutter.
 
+![The logo for the cookiecutter Python package](cookiecutter_logo.svg)
+
 ## Features
 
-- Nox for isolated testing
-- Modern Python dependency management with uv
-- pytest for testing
-- Documentation website with Quarto + GitHub pages
-- Automatic code documentation with Quartodoc
-- Code formatting with ruff (including formatting and import sorting)
-- Git pre-commit hooks for code quality
-  - Ruff lint/format/sort imports
+- [Nox](https://nox.thea.codes/en/stable/) for isolated testing
+- Modern Python dependency management with [uv](https://astral.sh/blog/uv)
+- [pytest](https://docs.pytest.org/en/7.4.x/) for testing
+- Documentation website with [Quarto](https://quarto.org/) + [GitHub Pages](https://pages.github.com/)
+- Automatic code documentation with [Quartodoc](=https://quartodoc.quarto.pub/)
+- Code formatting with [ruff](https://docs.astral.sh/ruff/) (including formatting and import sorting)
+- Git pre-commit hooks for code quality:
+  - [Ruff](https://docs.astral.sh/ruff/) lint/format/sort imports
   - check for added large files
-  - check TOML
-  - check YAML
-  - end of file fixer
-  - trailing whitespace trimmer
-  - nbstripout
-  - pydoclint
-- Continuous Integration with GitHub Actions
-  - tests with pytest + nox (cross-platform)
-  - code coverage
-  - release labeler
-  - PyPI publishing
-  - Docs build and deploy
+    - check TOML
+    - check YAML
+    - end of file fixer
+    - trailing whitespace trimmer
+    - [nbstripout](https://github.com/kynan/nbstripout)
+    - [pydoclint](https://github.com/jsh9/pydoclint) for checking docstrings agree with function definitions
+- Continuous Integration/Continuous Deployment with [GitHub Actions](https://github.com/features/actions)
+  - covers multiple versions of Python, and all three major operating systems
+  - tests with [pytest](https://docs.pytest.org/en) + [Nox](https://nox.thea.codes/en/stable/)
+    - Test cover with [Coverage.py](https://coverage.readthedocs.io/)
+    - Automatic [release labeler](https://github.com/actions/labeler) via Actions
+    - Automatic publishing to [PyPI](https://pypi.org/) with
+    - Dynamic docs build and deploy using [Quarto](https://quarto.org/) for a docs site, [Quartodoc](https://machow.github.io/quartodoc) for automatic API documentation, and [GitHub Pages](https://pages.github.com/) for deployment.
 
 ## Prerequisites
 
