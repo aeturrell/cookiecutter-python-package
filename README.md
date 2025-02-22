@@ -10,6 +10,8 @@ A modern Python package cookiecutter.
 - Modern Python dependency management with [uv](https://astral.sh/blog/uv)
 - [pytest](https://docs.pytest.org/en/7.4.x/) for testing
 - Code formatting with [ruff](https://docs.astral.sh/ruff/) (including formatting and import sorting)
+- [xdoctest](https://github.com/Erotemic/xdoctest) to check that examples of use in docstrings work as intended
+- [typeguard](https://github.com/agronholm/typeguard) for run-time type checking
 - Git pre-commit hooks for code quality:
   - [Ruff](https://docs.astral.sh/ruff/) lint/format/sort imports
   - check for added large files
