@@ -4,6 +4,7 @@ name: Release
 permissions:
   contents: write
   pages: write
+  id-token: write
 
 on:
   push:
@@ -58,10 +59,7 @@ jobs:
 
       - name: Publish package on PyPI
         if: steps.check-version.outputs.tag
-        uses: pypa/gh-action-pypi-publish@v1.12.4
-        with:
-          user: __token__
-          password: ${{ secrets.PYPI_TOKEN }}
+        uses: pypa/gh-action-pypi-publish@release/v1
 
       - name: Publish package on TestPyPI
         if: "! steps.check-version.outputs.tag"
