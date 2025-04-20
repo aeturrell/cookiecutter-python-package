@@ -4,13 +4,12 @@ version = "0.0.1"
 description = "A modern Python package cookiecutter."
 authors = [{name="Arthur Turrell", email="{{cookiecutter.email}}"}]
 readme = "README.md"
-license = {file = "LICENSE"}
+license = "MIT"
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.10",
-    "License :: OSI Approved :: MIT License",
 ]
 requires-python = ">=3.10"
 dependencies = [
@@ -35,6 +34,7 @@ dev = [
     "toml>=0.10.2",
     "xdoctest[colors]>=1.2.0",
     "ipykernel>=6.29.5",
+    "typeguard>=4.4.2",
 ]
 
 
