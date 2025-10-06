@@ -29,6 +29,8 @@ A modern Python package cookiecutter.
     - Automatic publishing to [PyPI](https://pypi.org/)
     - Dynamic docs build and deploy using [Quarto](https://quarto.org/) for a docs site, [Quartodoc](https://machow.github.io/quartodoc) for automatic API documentation, and [GitHub Pages](https://pages.github.com/) for deployment.
 
+Read more about it in the [accompanying blog post](https://aeturrell.com/blog/posts/ultra-modern-python-cookiecutters/).
+
 ## Prerequisites
 
 - the Python [package manager uv](https://docs.astral.sh/uv/)
