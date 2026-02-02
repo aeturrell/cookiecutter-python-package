@@ -7,13 +7,14 @@ from textwrap import dedent
 import nox
 
 package = "{{cookiecutter.repo_name}}"
-python_versions = ["3.10", "3.11", "3.12"]
+python_versions = ["3.10", "3.11", "3.12", "3.13"]
 nox.needs_version = ">= 2021.6.6"
 nox.options.default_venv_backend = "uv"
 nox.options.sessions = (
     "pre-commit",
     "tests",
     "typeguard",
+    "ty",
     "xdoctest",
 )
 
@@ -144,6 +145,20 @@ def typeguard(session: nox.Session) -> None:
     )
     session.run_install("uv", "pip", "install", "-e", ".")
     session.run("pytest", f"--typeguard-packages={package}", *session.posargs)
+
+
+@nox.session(venv_backend="uv", python=python_versions)
+def ty(session: nox.Session) -> None:
+    """Runtime type checking using ty."""
+    # Install project and dependencies using uv
+    session.run_install(
+        "uv",
+        "sync",
+        "--extra=dev",
+        env={"UV_PROJECT_ENVIRONMENT": session.virtualenv.location},
+    )
+    session.run_install("uv", "pip", "install", "-e", ".")
+    session.run("ty", "check", "src/", *session.posargs)
 
 
 @nox.session(venv_backend="uv", python=python_versions)
