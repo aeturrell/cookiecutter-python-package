@@ -12,6 +12,7 @@ A modern Python package cookiecutter.
 - Code formatting with [ruff](https://docs.astral.sh/ruff/) (including formatting and import sorting)
 - [xdoctest](https://github.com/Erotemic/xdoctest) to check that examples of use in docstrings work as intended
 - [typeguard](https://github.com/agronholm/typeguard) for run-time type checking
+- [ty](https://github.com/astral-sh/ty) for static type checking
 - Git pre-commit hooks for code quality:
   - [Ruff](https://docs.astral.sh/ruff/) lint/format/sort imports
   - check for added large files
