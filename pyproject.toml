@@ -39,6 +39,8 @@ dev = [
     "ty>=0.0.14",
 ]
 
+[tool.uv]
+package = true
 
 [tool.mypy]
 strict = false
